@@ -42,18 +42,41 @@ Power BI – For building interactive dashboards and visualizing key insights
 
 ![overall_ctr](images/overall_ctr.png)
 
+**-> Business Recommendation: Improve Overall Engagement**
+- Improve Ad creatives with better visuals & attractive headlines
+- Use more personalised ads
+
 2.  Certain age levels such as 0,6,1,5 are likely to click the ads more in comparison to other age levels with higher CTR.
 
 ![ctr_by_Age](images/ctr_by_age.png)
+
+**-> Business Recommendation: Target High-Performing Age Groups**
+- Customise ads based on their preferences
+- Allocate more budget to these segments
 
 3.  Morning & Midnight are our peak hours where users likely click the ads with high CTR.
 
 ![peak_hours](images/Peak_hours.png)
 
+**-> Business Recommendation: Optimise Ad timing**
+- Show more ads during these hours
+- Adjust spending during low-performing hours
+  
 4.  Lower age level people likely click our ads at night with high CTR i.e 28.57% & also it can be observed that these users are our primary segment with consistent higher CTR across the hours.
 
 ![CTR_byhour_Age](images/CTR_by_hour_age.png)
 
+**-> Business Recommendation: Focus on Young users at night**
+- Use content relevant to their behavior (entertainment, quick offers)
+- Peronalise their preferences & Run targeted night campaigns for younger users
+  
 5. There could be found few hidden opportunity where CTR was comparatively high but user exposure was relatively low such as Product J had high CTR(9.27%) but relatively low user exposure(around 9k) indicating strong potential for scaling ad reach. 
 
-![high_ctr_low_exposure](images/highctr_lowexposure.png)   
+![high_ctr_low_exposure](images/highctr_lowexposure.png) 
+
+**-> Business Recommendation: Scale high-performing products**
+- Increase visibilty of the particular product( For eg: Product J)
+- Feature it in top campaigns/webpages
+
+
+
