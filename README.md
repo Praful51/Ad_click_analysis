@@ -56,7 +56,7 @@ Power BI – For building interactive dashboards and visualizing key insights
 
 3.  Morning & Midnight are our peak hours where users likely click the ads with high CTR.
 
-![peak_hours](images/Peak_hours.png)
+![peak_hours](images/peak_bottom_hours.png)
 
 **-> Business Recommendation: Optimise Ad timing**
 - Show more ads during these hours
