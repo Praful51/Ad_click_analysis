@@ -1,5 +1,41 @@
 # Ad_click_analysis
 
+**Project Overview:**
+
+This project focuses on analyzing user interaction with online advertisements to understand click behavior and identify factors influencing engagement. The primary goal is to evaluate ad performance using key metrics like Click-Through Rate (CTR), uncover high-performing and underperforming segments, and identify hidden growth opportunities.
+
+The analysis was carried out using exploratory data analysis (EDA), SQL queries, and interactive dashboards to derive meaningful insights related to user demographics, product performance, time-based engagement, and webpage effectiveness.
+
+**Dataset Description:**
+
+The dataset contains user-level ad interaction data where each row represents an advertisement impression shown to a user.
+
+It includes information about whether the user clicked on the ad, along with attributes related to user demographics, product, campaign, and time.
+
+**Key Columns Include:**
+
+is_click → Indicates whether the ad was clicked (1 = Yes, 0 = No)
+product → Product category displayed in the ad
+campaign_id → Campaign identifier
+webpage_id → Webpage where the ad was shown
+gender → User gender
+age_level → Categorized age group
+hour → Hour of ad impression
+day_of_week → Day of interaction
+
+**Key Metric:**
+
+Click-Through Rate (CTR)
+Defined as:
+CTR = Total Clicks / Total Impressions
+Used as the primary performance indicator across all segments
+
+**Tools Used:**
+
+MySQL – For writing SQL queries and performing data analysis
+Python (Jupyter Notebook) – For data cleaning, preprocessing, and exploratory analysis
+Power BI – For building interactive dashboards and visualizing key insights
+
 **Key Insights:**
 
 1. Overall CTR(Click through rate) is low (6.76%) that is out of 100% of Ad interactions only 6.76% clicked it.
