@@ -101,7 +101,6 @@ This caused  models like logistic regression, random forest classifier to achiev
 To handle the imbalance and improve model performance:
 
 1. Used Random Forest Classifier
-
 A robust ensemble learning method that captures complex patterns in the data.
 
 2. Applied Class Weight Balancing
@@ -110,17 +109,14 @@ RandomForestClassifier(class_weight='balanced')
 This ensures the model gives more importance to the minority class (clicks).
 
 3. Used Probability-Based Prediction
-
 Instead of using default predictions, probabilities were used:
 
 y_prob = model.predict_proba(X_test)[:,1]
 
 4. Threshold Tuning (Key Step)
-
 The default threshold (0.5) was adjusted to 0.3:
 
 y_pred = (y_prob > 0.3).astype(int)
-
 This significantly improved the model’s ability to detect actual clicks.
 
 Model Evaluation
@@ -133,6 +129,14 @@ F1-score
 Confusion Matrix
 
 **Key Insight:**
-The initial model had high accuracy (~93%) but failed to detect clicks.
-After applying class balancing and threshold tuning, the model successfully identified a large portion of actual clickers.
-This trade-off prioritizes recall over precision, which is suitable for marketing use cases.
+
+- The initial model had high accuracy (~93%) but failed to detect clicks.
+- After applying class balancing and threshold tuning, the model successfully identified a large portion of actual clickers.
+- This trade-off prioritizes recall over precision, which is suitable for marketing use cases.
+
+**Business Impact:**
+
+- Helps identify users more likely to click ads
+- Reduces missed opportunities (false negatives)
+- Improves ad targeting and campaign efficiency
+- 
