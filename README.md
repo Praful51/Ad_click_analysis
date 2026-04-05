@@ -79,4 +79,60 @@ Power BI – For building interactive dashboards and visualizing key insights
 - Feature it in top campaigns/webpages
 
 
+Perfect — here’s your final, clean, professional ML section for your README 👇
+(You can copy-paste this directly)
 
+**Machine Learning Model**
+
+**Objective:**
+The goal of the machine learning model is to predict whether a user will click on an advertisement (is_click = 1) or not (is_click = 0).
+This helps in identifying potential customers and optimizing ad targeting strategies.
+
+**Challenge Faced:**
+The dataset was highly imbalanced:
+
+~93% users did not click (0)
+~7% users clicked (1)
+
+This caused  models like logistic regression, random forest classifier to achieve high accuracy but fail in detecting actual clicks.
+
+**Approach & Solution:**
+
+To handle the imbalance and improve model performance:
+
+1. Used Random Forest Classifier
+
+A robust ensemble learning method that captures complex patterns in the data.
+
+2. Applied Class Weight Balancing
+RandomForestClassifier(class_weight='balanced')
+
+This ensures the model gives more importance to the minority class (clicks).
+
+3. Used Probability-Based Prediction
+
+Instead of using default predictions, probabilities were used:
+
+y_prob = model.predict_proba(X_test)[:,1]
+
+4. Threshold Tuning (Key Step)
+
+The default threshold (0.5) was adjusted to 0.3:
+
+y_pred = (y_prob > 0.3).astype(int)
+
+This significantly improved the model’s ability to detect actual clicks.
+
+Model Evaluation
+
+Instead of relying only on accuracy, the model was evaluated using:
+
+Precision
+Recall
+F1-score
+Confusion Matrix
+
+**Key Insight:**
+The initial model had high accuracy (~93%) but failed to detect clicks.
+After applying class balancing and threshold tuning, the model successfully identified a large portion of actual clickers.
+This trade-off prioritizes recall over precision, which is suitable for marketing use cases.
